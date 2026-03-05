@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Far? — Regras do Jogo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #f8f9fa; padding: 20px; }
+        .container { max-width: 680px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 32px 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+        h1 { font-size: 1.5em; margin-bottom: 4px; color: #111; }
+        .updated { font-size: 0.85em; color: #666; margin-bottom: 24px; }
+        h2 { font-size: 1.1em; margin-top: 24px; margin-bottom: 8px; color: #222; }
+        h3 { font-size: 1em; margin-top: 16px; margin-bottom: 6px; color: #333; }
+        p, li { font-size: 0.95em; color: #333; margin-bottom: 8px; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { margin-bottom: 4px; }
+        .highlight { background: #e8f5e9; border-left: 3px solid #4caf50; padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 0.9em; }
+        .highlight-blue { background: #e3f2fd; border-left: 3px solid #2196f3; padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 0.9em; }
+        .highlight-amber { background: #fff8e1; border-left: 3px solid #ff9800; padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 0.9em; }
+        table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9em; }
+        th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #e0e0e0; }
+        th { background: #f5f5f5; font-weight: 600; color: #222; }
+        .lang-switch { text-align: right; font-size: 0.85em; margin-bottom: 16px; }
+        .lang-switch a { color: #2196f3; text-decoration: none; }
+        .lang-switch a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch"><a href="../en/">English</a></div>
+        <h1>How Far? — Regras do Jogo</h1>
+        <div class="updated">Última atualização: 5 de março de 2026</div>
+
+        <h2>1. O que é How Far?</h2>
+        <p>How Far? mede sua <strong>rede viva de conexões</strong> ao redor do mundo. Cada conexão é uma distância real em quilômetros entre as cidades de duas pessoas. Quanto mais conexões você tiver e quanto mais distantes estiverem suas cidades, maior será seu alcance.</p>
+        <p>O placar não mostra "quem já acumulou mais km", mas sim <strong>quem está mantendo a rede mais forte neste momento</strong>.</p>
+
+        <h2>2. Começando</h2>
+        <p><strong>Caminho 1 — Via link de um amigo.</strong> Um amigo lhe envia o link dele. Você abre @howfa_bot, compartilha sua localização, o bot identifica sua cidade e você é convidado a se conectar com a pessoa que o trouxe. Ambos ganham km.</p>
+        <p><strong>Caminho 2 — Diretamente.</strong> Você abre @howfa_bot por conta própria, compartilha sua localização, o bot identifica sua cidade e você recebe seu link de conexão pessoal. Você começa com 0 conexões — aumente sua rede compartilhando seu link ou aceitando convites de outros.</p>
+        <p>Sua <strong>cidade</strong> é determinada uma única vez e pode ser alterada no máximo uma vez a cada 90 dias.</p>
+
+        <h2>3. Conexões</h2>
+        <h3>O que é uma conexão?</h3>
+        <p>Uma conexão é um vínculo confirmado entre duas pessoas. Quando uma conexão é feita, ambas ganham quilômetros — a distância entre suas cidades.</p>
+
+        <h3>Como se conectar</h3>
+        <p><strong>Forma 1: Convide uma nova pessoa.</strong> Compartilhe seu link. Um amigo o abre, se registra e aceita a conexão. Ambos ganham km.</p>
+        <p><strong>Forma 2: Conecte-se com alguém já em How Far?.</strong> Compartilhe seu link com um usuário existente. Ele clica e aceita. Ambos ganham km. <strong>Você não precisa trazer novas pessoas</strong> — você pode crescer sua rede dentro da comunidade existente.</p>
+
+        <h3>Custo da conexão (pontos)</h3>
+        <p>Cada conexão custa pontos para ambos os lados:</p>
+
+        <ul>
+            <li><strong>Iniciador</strong> (quem compartilhou o link): 10 pontos</li>
+            <li><strong>Aceitante</strong> (quem clicou e aceitou): 5 pontos</li>
+        </ul>
+        <p>Se qualquer um dos lados não tiver pontos suficientes, a conexão não pode ser feita.</p>
+
+        <h3>Regras de conexão</h3>
+
+        <ul>
+            <li>Você não pode se conectar consigo mesmo.</li>
+            <li>Apenas uma conexão entre duas pessoas.</li>
+            <li>Conexões na mesma cidade ganham 10 km (distância mínima).</li>
+            <li>Conexões são permanentes — km são creditados a ambos os lados instantaneamente.</li>
+            <li>Conexões individuais não podem ser quebradas. Para deletar todos os dados — use /delete_data (remove TODAS as conexões, km e conquistas).</li>
+        </ul>
+
+        <h2>4. Níveis de Conexão (L1 / L2)</h2>
+        <h3>L1 — Conexões diretas</h3>
+        <p>Pessoas com as quais você se conectou diretamente. Cada conexão L1 dá a você km = a distância entre suas cidades.</p>
+
+        <h3>L2 — Conexões de conexões</h3>
+        <p>Quando seu contato L1 faz uma nova conexão com alguém, você ganha quilômetros L2 = a distância da conexão deles. Este é o "efeito de rede": quanto mais ativo seus amigos forem, mais seu alcance cresce.</p>
+        <p>Km L2 são creditados automaticamente — nenhuma ação necessária de sua parte.</p>
+
+        <h3>Saúde afeta L2</h3>
+        <p>Km L2 dependem da <strong>saúde</strong> de seus amigos L1. Se um amigo está ativo (saúde 100%) — você ganha 100% de sua contribuição L2. Se um amigo está inativo (saúde 50%) — você ganha 50%. Se completamente inativo (saúde 0%) — a contribuição L2 dele é 0.</p>
+
+        <div class="highlight-blue">Sua rede é verdadeiramente forte quando seus amigos também estão ativos.</div>
+
+        <h2>5. Pontos</h2>
+        <h3>Alocação diária</h3>
+
+        <ul>
+            <li><strong>Primeiro dia:</strong> 100 pontos (bônus de recém-chegado)</li>
+            <li><strong>A partir do dia 2:</strong> 30 pontos</li>
+        </ul>
+        <p>Pontos não usados <strong>não se acumulam</strong> — seu saldo é resetado para a quantia diária a cada dia às 00:00 UTC.</p>
+
+        <h3>Bônus de inscrição em canal</h3>
+        <p>Inscrever-se no canal da comunidade dá +10 pontos/dia (40 em vez de 30). O bônus está ativo enquanto inscrito. Disponível se um canal existe para seu país.</p>
+
+        <h3>Custos de pontos</h3>
+        <table>
+            <tr><th>Ação</th><th>Custo</th></tr>
+            <tr><td>Enviar um pedido de conexão</td><td>10 pontos</td></tr>
+            <tr><td>Aceitar uma conexão</td><td>5 pontos</td></tr>
+        </table>
+
+        <h2>6. Rede Viva — O Mecanismo Principal</h2>
+        <h3>O que é?</h3>
+        <p>How Far? mede uma <strong>rede viva</strong>, não números estáticos. Sua pontuação ativa (active_km) depende de como você regularmente expande sua rede.</p>
+
+        <h3>Como funciona</h3>
+
+        <ul>
+            <li>Todo usuário tem um indicador de <strong>Saúde da Rede (0-100%)</strong>.</li>
+            <li>Saúde = 100% no momento de sua última conexão (seja você quem convidou ou foi convidado).</li>
+            <li>Se você não fizer novas conexões, a saúde começa a declinar: <strong>-10% a cada 3 dias sem uma nova conexão</strong>.</li>
+            <li>Após 30 dias sem conexões: saúde = 0%.</li>
+            <li><strong>Qualquer nova conexão</strong> = restauração instantânea para 100%.</li>
+            <li><strong>Ação = fazer uma conexão.</strong> Apenas abrir o bot ou visualizar estatísticas não conta.</li>
+        </ul>
+
+        <h3>O que a saúde afeta</h3>
+
+        <ul>
+            <li><strong>Seus km L1 no placar:</strong> active_L1 = L1_km × (sua saúde / 100)</li>
+            <li><strong>Seus km L2 no placar:</strong> depende da saúde de seus amigos</li>
+            <li><strong>Total do placar:</strong> active_km = active_L1 + active_L2</li>
+            <li><strong>Km vitalício</strong> (contador total em /stats) — NÃO afetado. Esse é seu histórico.</li>
+            <li><strong>Contador global</strong> — NÃO afetado pela saúde individual.</li>
+        </ul>
+
+        <h3>Período de carência para recém-chegados</h3>
+        <p>Os primeiros <strong>7 dias</strong> após o registro — a saúde não declina. Tempo para explorar o bot, convidar os primeiros amigos, aprender a mecânica.</p>
+
+        <h3>Voltando</h3>
+        <div class="highlight">Mesmo que sua saúde seja 0% e você não tenha feito login por meses — uma única nova conexão restaura instantaneamente a saúde para 100%. Sempre nos alegra vê-lo de volta. Sem penalidades por ausência.</div>
+
+        <h3>Filosofia</h3>
+        <p>Rede Viva não é um castigo pela inatividade. Reflete a realidade: uma rede real é uma que você mantém e faz crescer. O placar mostra quem está construindo a rede mais forte do mundo <strong>neste momento</strong>.</p>
+
+        <h2>7. Placar</h2>
+        <p>O placar é ordenado por <strong>active_km</strong> (active_L1 + active_L2).</p>
+        <p>Placares públicos <strong>não revelam nomes de usuário ou dados pessoais</strong>. Eles mostram as principais cidades e contagens de usuários ativos por país.</p>
+        <p>Em /stats você vê sua classificação em sua <strong>cidade</strong>, <strong>país</strong> e no <strong>mundo</strong>.</p>
+        <p>O placar é atualizado a cada 6 horas.</p>
+
+        <h2>8. Conquistas</h2>
+        <p>As conquistas são contadas por <strong>km vitalício</strong> — conquistas ganhas nunca são removidas quando a saúde cai. Cidades e países de conexões <strong>L1 e L2</strong> contam para conquistas geográficas.</p>
+        <p>Em /stats, apenas a <strong>conquista mais alta</strong> por categoria é mostrada. Em /achievements, todas são visíveis com progresso.</p>
+
+        <h3>Conquistas de quilometragem</h3>
+        <table>
+            <tr><th>Conquista</th><th>Limite</th></tr>
+            <tr><td>&#x1F463; Primeiros Passos</td><td>1.000 km</td></tr>
+            <tr><td>&#x1F30D; Explorador</td><td>1.000.000 km</td></tr>
+            <tr><td>&#x1F680; Alcance Global</td><td>1.000.000.000 km</td></tr>
+        </table>
+
+        <h3>Conquistas de conexão</h3>
+        <table>
+            <tr><th>Conquista</th><th>Limite</th></tr>
+            <tr><td>&#x1F91D; Conector</td><td>10 conexões</td></tr>
+            <tr><td>&#x1F310; Conectista</td><td>50 conexões</td></tr>
+            <tr><td>&#x2B50; Hub</td><td>500 conexões</td></tr>
+        </table>
+
+        <h3>Conquistas de país</h3>
+        <table>
+            <tr><th>Conquista</th><th>Limite</th></tr>
+            <tr><td>&#x1F310; Alcance Mundial</td><td>50 países</td></tr>
+            <tr><td>&#x1FA90; Planetário</td><td>100 países</td></tr>
+            <tr><td>&#x1F3C6; Conector Mundial</td><td>188 países (todos)</td></tr>
+        </table>
+
+        <h3>Conquistas de cidade</h3>
+        <table>
+            <tr><th>Conquista</th><th>Limite</th></tr>
+            <tr><td>&#x1F3D9;&#xFE0F; Explorador de Cidade</td><td>1.000 cidades</td></tr>
+            <tr><td>&#x1F5FA;&#xFE0F; Mestre de Cidade</td><td>10.000 cidades</td></tr>
+        </table>
+
+        <h3>Conquistas de Rede Viva</h3>
+        <table>
+            <tr><th>Conquista</th><th>Limite</th></tr>
+            <tr><td>&#x1F6E1;&#xFE0F; Guardião da Rede</td><td>30 dias com saúde 100%</td></tr>
+            <tr><td>&#x1F48E; Inquebrantável</td><td>90 dias com saúde 100%</td></tr>
+        </table>
+        <p>Mantenha a saúde em 100% sem interrupções. Qualquer queda reseta o contador. Faça pelo menos uma nova conexão a cada 3 dias.</p>
+
+        <h3>Insígnias especiais (limitadas)</h3>
+        <table>
+            <tr><th>Insígnia</th><th>Condição</th></tr>
+            <tr><td>&#x1F31F; Genesis</td><td>Primeiros 1.000 usuários. Para sempre.</td></tr>
+            <tr><td>&#x1F525; Pioneiro</td><td>Primeiros 1.000.000 de usuários. Para sempre.</td></tr>
+        </table>
+
+        <h2>9. Fair Play</h2>
+        <p>How Far? é um jogo sobre conexões reais entre pessoas reais. A mecânica é projetada para que <strong>trapaça seja inerentemente desvantajosa</strong>:</p>
+
+        <ul>
+            <li>Contas falsas perdem saúde sem novas conexões: abaixo de 50% em 2 semanas, 0% em um mês. Km de conexões com elas diminuem proporcionalmente.</li>
+            <li>Boost dá um pico curto, mas sem esforço sustentado a pontuação volta a zero.</li>
+            <li>Conexões reais com pessoas reais são o único jeito de manter um active_km alto.</li>
+        </ul>
+
+        <h3>O que conta como violação</h3>
+
+        <ul>
+            <li>Usar ferramentas automatizadas (bots, scripts) para criação em massa de contas e conexões.</li>
+            <li>Falsificar localização geográfica para ganhar vantagem injusta.</li>
+        </ul>
+
+        <h3>Medidas automáticas</h3>
+        <p>O sistema monitora automaticamente atividades suspeitas. Quando anomalias são detectadas, o usuário <strong>recebe uma notificação</strong> explicando o motivo e duração:</p>
+
+        <ul>
+            <li><strong>Nível 1 (aviso):</strong> Redução temporária de pontos diários por 48 horas. Limpa automaticamente.</li>
+            <li><strong>Nível 2 (restrição):</strong> Oculto do placar + pontos reduzidos. Estatísticas e conexões preservadas. Limpa automaticamente quando a atividade se normaliza.</li>
+            <li><strong>Nível 3 (bloqueio):</strong> Bloqueio completo de conta. Aplicado apenas para violações sistemáticas.</li>
+        </ul>
+
+        <div class="highlight-amber">Todas as medidas são automáticas — sem intervenção manual. Escalação e desescalação seguem o algoritmo.</div>
+
+        <h2>10. Alterando Sua Cidade</h2>
+
+        <ul>
+            <li>Cidade pode ser alterada <strong>uma vez a cada 90 dias</strong>.</li>
+            <li>Conexões existentes <strong>mantêm seu km original</strong> (distância calculada no momento da conexão).</li>
+            <li>Novas conexões após a mudança são calculadas a partir da nova cidade.</li>
+        </ul>
+
+        <h2>11. Contador Global</h2>
+        <p>A tela principal mostra um <strong>contador global</strong>: quilômetros totais, pessoas e países de todos os usuários de How Far?. Este é o progresso coletivo de toda a comunidade. O contador global NÃO é afetado pela saúde individual.</p>
+
+        <h2>12. Dados e Privacidade</h2>
+
+        <ul>
+            <li>O bot armazena apenas sua <strong>cidade</strong> (não coordenadas GPS exatas).</li>
+            <li>Nomes de usuário não são revelados em placares públicos.</li>
+            <li>Visualize seus dados: /my_data</li>
+            <li>Delete todos os seus dados: /delete_data</li>
+            <li>Contas inativas (365 dias) são limpas automaticamente.</li>
+            <li>Política de privacidade completa: <a href="https://howfar-bot.github.io/privacy/pt/">Política de Privacidade</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Far? — Aturan Permainan</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #f8f9fa; padding: 20px; }
+        .container { max-width: 680px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 32px 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+        h1 { font-size: 1.5em; margin-bottom: 4px; color: #111; }
+        .updated { font-size: 0.85em; color: #666; margin-bottom: 24px; }
+        h2 { font-size: 1.1em; margin-top: 24px; margin-bottom: 8px; color: #222; }
+        h3 { font-size: 1em; margin-top: 16px; margin-bottom: 6px; color: #333; }
+        p, li { font-size: 0.95em; color: #333; margin-bottom: 8px; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { margin-bottom: 4px; }
+        .highlight { background: #e8f5e9; border-left: 3px solid #4caf50; padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 0.9em; }
+        .highlight-blue { background: #e3f2fd; border-left: 3px solid #2196f3; padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 0.9em; }
+        .highlight-amber { background: #fff8e1; border-left: 3px solid #ff9800; padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 0.9em; }
+        table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9em; }
+        th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #e0e0e0; }
+        th { background: #f5f5f5; font-weight: 600; color: #222; }
+        .lang-switch { text-align: right; font-size: 0.85em; margin-bottom: 16px; }
+        .lang-switch a { color: #2196f3; text-decoration: none; }
+        .lang-switch a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch"><a href="../en/">English</a></div>
+        <h1>How Far? — Aturan Permainan</h1>
+        <div class="updated">Terakhir diperbarui: 5 Maret 2026</div>
+
+        <h2>1. Apa itu How Far?</h2>
+        <p>How Far? mengukur <strong>jaringan koneksi hidup Anda</strong> di seluruh dunia. Setiap koneksi adalah jarak nyata dalam kilometer antara kota dua orang. Semakin banyak koneksi yang Anda miliki dan semakin jauh kota-kota Anda berada, semakin besar jangkauan Anda.</p>
+        <p>Papan peringkat tidak menunjukkan "siapa yang pernah mengumpulkan km paling banyak" tetapi <strong>siapa yang mempertahankan jaringan terkuat sekarang</strong>.</p>
+
+        <h2>2. Memulai</h2>
+        <p><strong>Cara 1 — Melalui tautan teman.</strong> Teman mengirimkan tautan mereka. Anda membuka @howfa_bot, membagikan lokasi Anda, bot mengidentifikasi kota Anda, dan Anda ditawarkan untuk terhubung dengan orang yang mengundang Anda. Kedua-duanya mendapatkan km.</p>
+        <p><strong>Cara 2 — Langsung.</strong> Anda membuka @howfa_bot sendiri, membagikan lokasi Anda, bot mengidentifikasi kota Anda, dan Anda mendapatkan tautan koneksi pribadi Anda. Anda memiliki 0 koneksi — tumbuhkan jaringan Anda dengan membagikan tautan Anda atau menerima tautan orang lain.</p>
+        <p><strong>Kota</strong> Anda ditentukan sekali dan dapat diubah maksimal sekali setiap 90 hari.</p>
+
+        <h2>3. Koneksi</h2>
+        <h3>Apa itu koneksi?</h3>
+        <p>Koneksi adalah tautan terverifikasi antara dua orang. Saat koneksi dibuat, kedua-duanya mendapatkan kilometer — jarak antara kota mereka.</p>
+
+        <h3>Cara terhubung</h3>
+        <p><strong>Cara 1: Undang orang baru.</strong> Bagikan tautan Anda. Teman membukanya, mendaftar, menerima koneksi. Kedua-duanya mendapatkan km.</p>
+        <p><strong>Cara 2: Terhubung dengan seseorang yang sudah ada di How Far?.</strong> Bagikan tautan Anda dengan pengguna yang ada. Mereka mengkliknya dan menerima. Kedua-duanya mendapatkan km. <strong>Anda tidak harus membawa orang baru</strong> — Anda dapat mengembangkan jaringan Anda dalam komunitas yang sudah ada.</p>
+
+        <h3>Biaya koneksi (poin)</h3>
+        <p>Setiap koneksi mengeluarkan biaya poin untuk kedua belah pihak:</p>
+
+        <ul>
+            <li><strong>Inisiator</strong> (yang membagikan tautan): 10 poin</li>
+            <li><strong>Penerima</strong> (yang mengklik dan menerima): 5 poin</li>
+        </ul>
+        <p>Jika salah satu pihak tidak memiliki cukup poin, koneksi tidak dapat dibuat.</p>
+
+        <h3>Aturan koneksi</h3>
+
+        <ul>
+            <li>Anda tidak dapat terhubung dengan diri sendiri.</li>
+            <li>Hanya satu koneksi antara dua orang.</li>
+            <li>Koneksi kota yang sama mendapatkan 10 km (jarak minimum).</li>
+            <li>Koneksi bersifat permanen — km dikreditkan ke kedua belah pihak secara instan.</li>
+            <li>Koneksi individual tidak dapat diputuskan. Untuk menghapus semua data — gunakan /delete_data (menghapus SEMUA koneksi, km, pencapaian).</li>
+        </ul>
+
+        <h2>4. Level Koneksi (L1 / L2)</h2>
+        <h3>L1 — Koneksi langsung</h3>
+        <p>Orang-orang yang Anda terhubung langsung. Setiap koneksi L1 memberi Anda km = jarak antara kota Anda.</p>
+
+        <h3>L2 — Koneksi dari koneksi</h3>
+        <p>Saat kontak L1 Anda membuat koneksi baru dengan seseorang, Anda mendapatkan kilometer L2 = jarak koneksi mereka. Ini adalah "efek jaringan": semakin aktif teman Anda, semakin besar jangkauan Anda bertambah.</p>
+        <p>Kilometer L2 dikreditkan secara otomatis — tidak ada tindakan yang diperlukan dari Anda.</p>
+
+        <h3>Kesehatan mempengaruhi L2</h3>
+        <p>Kilometer L2 tergantung pada <strong>kesehatan</strong> teman L1 Anda. Jika teman aktif (kesehatan 100%) — Anda mendapatkan 100% kontribusi L2 mereka. Jika teman tidak aktif (kesehatan 50%) — Anda mendapatkan 50%. Jika sepenuhnya tidak aktif (kesehatan 0%) — kontribusi L2 mereka adalah 0.</p>
+
+        <div class="highlight-blue">Jaringan Anda benar-benar kuat ketika teman-teman Anda juga aktif.</div>
+
+        <h2>5. Poin</h2>
+        <h3>Alokasi harian</h3>
+
+        <ul>
+            <li><strong>Hari pertama:</strong> 100 poin (bonus pendatang baru)</li>
+            <li><strong>Mulai hari 2:</strong> 30 poin</li>
+        </ul>
+        <p>Poin yang tidak digunakan <strong>tidak terakumulasi</strong> — saldo Anda diatur ulang ke jumlah harian setiap hari pada 00:00 UTC.</p>
+
+        <h3>Bonus langganan saluran</h3>
+        <p>Berlangganan saluran komunitas memberikan +10 poin/hari (40 bukan 30). Bonus aktif saat Anda berlangganan. Tersedia jika saluran ada untuk negara Anda.</p>
+
+        <h3>Biaya poin</h3>
+        <table>
+            <tr><th>Tindakan</th><th>Biaya</th></tr>
+            <tr><td>Kirim permintaan koneksi</td><td>10 poin</td></tr>
+            <tr><td>Terima koneksi</td><td>5 poin</td></tr>
+        </table>
+
+        <h2>6. Jaringan Hidup — Mekanik Utama</h2>
+        <h3>Apa itu?</h3>
+        <p>How Far? mengukur <strong>jaringan hidup</strong>, bukan angka statis. Skor aktif Anda (active_km) tergantung pada seberapa teratur Anda memperluas jaringan Anda.</p>
+
+        <h3>Cara kerjanya</h3>
+
+        <ul>
+            <li>Setiap pengguna memiliki indikator <strong>Kesehatan Jaringan (0-100%)</strong>.</li>
+            <li>Kesehatan = 100% pada saat koneksi terakhir Anda (baik Anda mengundang atau diundang).</li>
+            <li>Jika Anda tidak membuat koneksi baru, kesehatan mulai menurun: <strong>-10% setiap 3 hari tanpa koneksi baru</strong>.</li>
+            <li>Setelah 30 hari tanpa koneksi: kesehatan = 0%.</li>
+            <li><strong>Koneksi baru apa pun</strong> = pemulihan instan ke 100%.</li>
+            <li><strong>Tindakan = membuat koneksi.</strong> Hanya membuka bot atau melihat statistik tidak dihitung.</li>
+        </ul>
+
+        <h3>Apa yang dipengaruhi kesehatan</h3>
+
+        <ul>
+            <li><strong>Kilometer L1 Anda di papan peringkat:</strong> active_L1 = L1_km × (kesehatan Anda / 100)</li>
+            <li><strong>Kilometer L2 Anda di papan peringkat:</strong> tergantung pada kesehatan teman</li>
+            <li><strong>Total papan peringkat:</strong> active_km = active_L1 + active_L2</li>
+            <li><strong>Kilometer seumur hidup</strong> (penghitung total di /stats) — TIDAK terpengaruh. Itu adalah riwayat Anda.</li>
+            <li><strong>Penghitung global</strong> — TIDAK terpengaruh oleh kesehatan individu.</li>
+        </ul>
+
+        <h3>Periode percobaan untuk pemula</h3>
+        <p><strong>7 hari pertama</strong> setelah pendaftaran — kesehatan tidak menurun. Waktu untuk menjelajahi bot, mengundang teman pertama, mempelajari mekanika.</p>
+
+        <h3>Kembali</h3>
+        <div class="highlight">Bahkan jika kesehatan Anda 0% dan Anda belum masuk selama berbulan-bulan — satu koneksi baru secara instan memulihkan kesehatan ke 100%. Kami senang melihat Anda kembali. Tidak ada penalti untuk ketidakhadiran.</div>
+
+        <h3>Filosofi</h3>
+        <p>Jaringan Hidup bukan hukuman atas ketidakaktifan. Ini mencerminkan kenyataan: jaringan nyata adalah jaringan yang Anda pertahankan dan kembangkan. Papan peringkat menunjukkan siapa yang membangun jaringan terkuat di dunia <strong>sekarang</strong>.</p>
+
+        <h2>7. Papan Peringkat</h2>
+        <p>Papan peringkat diurutkan berdasarkan <strong>active_km</strong> (active_L1 + active_L2).</p>
+        <p>Papan peringkat publik <strong>tidak mengungkapkan nama pengguna atau data pribadi</strong>. Mereka menunjukkan kota-kota teratas dan jumlah pengguna aktif menurut negara.</p>
+        <p>Di /stats Anda melihat peringkat Anda di <strong>kota</strong>, <strong>negara</strong>, dan <strong>dunia</strong> Anda.</p>
+        <p>Papan peringkat diperbarui setiap 6 jam.</p>
+
+        <h2>8. Pencapaian</h2>
+        <p>Pencapaian dihitung berdasarkan <strong>kilometer seumur hidup</strong> — pencapaian yang diperoleh tidak pernah diambil ketika kesehatan menurun. Kota dan negara dari koneksi <strong>L1 dan L2</strong> dihitung menuju pencapaian geografis.</p>
+        <p>Di /stats, hanya <strong>pencapaian tertinggi</strong> per kategori yang ditampilkan. Di /achievements, semuanya terlihat dengan kemajuan.</p>
+
+        <h3>Pencapaian kilometer</h3>
+        <table>
+            <tr><th>Pencapaian</th><th>Ambang Batas</th></tr>
+            <tr><td>&#x1F463; Langkah Pertama</td><td>1.000 km</td></tr>
+            <tr><td>&#x1F30D; Penjelajah</td><td>1.000.000 km</td></tr>
+            <tr><td>&#x1F680; Jangkauan Global</td><td>1.000.000.000 km</td></tr>
+        </table>
+
+        <h3>Pencapaian koneksi</h3>
+        <table>
+            <tr><th>Pencapaian</th><th>Ambang Batas</th></tr>
+            <tr><td>&#x1F91D; Penyambung</td><td>10 koneksi</td></tr>
+            <tr><td>&#x1F310; Penjaringan</td><td>50 koneksi</td></tr>
+            <tr><td>&#x2B50; Pusat</td><td>500 koneksi</td></tr>
+        </table>
+
+        <h3>Pencapaian negara</h3>
+        <table>
+            <tr><th>Pencapaian</th><th>Ambang Batas</th></tr>
+            <tr><td>&#x1F310; Jangkauan Dunia</td><td>50 negara</td></tr>
+            <tr><td>&#x1FA90; Planet</td><td>100 negara</td></tr>
+            <tr><td>&#x1F3C6; Penyambung Dunia</td><td>188 negara (semua)</td></tr>
+        </table>
+
+        <h3>Pencapaian kota</h3>
+        <table>
+            <tr><th>Pencapaian</th><th>Ambang Batas</th></tr>
+            <tr><td>&#x1F3D9;&#xFE0F; Penjelajah Kota</td><td>1.000 kota</td></tr>
+            <tr><td>&#x1F5FA;&#xFE0F; Penguasa Kota</td><td>10.000 kota</td></tr>
+        </table>
+
+        <h3>Pencapaian Jaringan Hidup</h3>
+        <table>
+            <tr><th>Pencapaian</th><th>Ambang Batas</th></tr>
+            <tr><td>&#x1F6E1;&#xFE0F; Penjaga Jaringan</td><td>30 hari pada kesehatan 100%</td></tr>
+            <tr><td>&#x1F48E; Tak Terputus</td><td>90 hari pada kesehatan 100%</td></tr>
+        </table>
+        <p>Pertahankan kesehatan pada 100% tanpa gangguan. Penurunan apa pun mengatur ulang penghitung. Buat setidaknya satu koneksi baru setiap 3 hari.</p>
+
+        <h3>Lencana khusus (terbatas)</h3>
+        <table>
+            <tr><th>Lencana</th><th>Kondisi</th></tr>
+            <tr><td>&#x1F31F; Awal Mula</td><td>1.000 pengguna pertama. Selamanya.</td></tr>
+            <tr><td>&#x1F525; Pelopor</td><td>1.000.000 pengguna pertama. Selamanya.</td></tr>
+        </table>
+
+        <h2>9. Permainan Adil</h2>
+        <p>How Far? adalah permainan tentang koneksi nyata antara orang-orang nyata. Mekanika dirancang sehingga <strong>kecurangan secara inheren merugikan</strong>:</p>
+
+        <ul>
+            <li>Akun palsu kehilangan kesehatan tanpa koneksi baru: di bawah 50% dalam 2 minggu, 0% dalam sebulan. Kilometer dari koneksi dengan mereka memudar secara proporsional.</li>
+            <li>Peningkatan memberikan lonjakan singkat, tetapi tanpa upaya berkelanjutan skor kembali ke nol.</li>
+            <li>Koneksi nyata dengan orang-orang nyata adalah satu-satunya cara untuk mempertahankan active_km tinggi.</li>
+        </ul>
+
+        <h3>Apa yang dianggap sebagai pelanggaran</h3>
+
+        <ul>
+            <li>Menggunakan alat otomatis (bot, skrip) untuk pembuatan akun dan koneksi massal.</li>
+            <li>Memalsukan geolokasi untuk mendapatkan keuntungan yang tidak adil.</li>
+        </ul>
+
+        <h3>Tindakan otomatis</h3>
+        <p>Sistem secara otomatis memantau aktivitas mencurigakan. Ketika anomali terdeteksi, pengguna <strong>menerima notifikasi</strong> yang menjelaskan alasan dan durasi:</p>
+
+        <ul>
+            <li><strong>Level 1 (peringatan):</strong> Pengurangan sementara poin harian selama 48 jam. Hilang secara otomatis.</li>
+            <li><strong>Level 2 (pembatasan):</strong> Tersembunyi dari papan peringkat + poin berkurang. Statistik dan koneksi dipertahankan. Hilang secara otomatis saat aktivitas normal.</li>
+            <li><strong>Level 3 (pemblokiran):</strong> Blok akun penuh. Hanya diterapkan untuk pelanggaran sistematis.</li>
+        </ul>
+
+        <div class="highlight-amber">Semua tindakan otomatis — tanpa intervensi manual. Eskalasi dan de-eskalasi mengikuti algoritma.</div>
+
+        <h2>10. Mengubah Kota Anda</h2>
+
+        <ul>
+            <li>Kota dapat diubah <strong>sekali setiap 90 hari</strong>.</li>
+            <li>Koneksi yang ada <strong>menyimpan kilometer asli mereka</strong> (jarak dihitung pada saat koneksi).</li>
+            <li>Koneksi baru setelah perubahan dihitung dari kota baru.</li>
+        </ul>
+
+        <h2>11. Penghitung Global</h2>
+        <p>Layar utama menampilkan <strong>penghitung global</strong>: total kilometer, orang, dan negara dari semua pengguna How Far?. Ini adalah kemajuan kolektif seluruh komunitas. Penghitung global TIDAK terpengaruh oleh kesehatan individu.</p>
+
+        <h2>12. Data dan Privasi</h2>
+
+        <ul>
+            <li>Bot hanya menyimpan <strong>kota</strong> Anda (bukan koordinat GPS yang tepat).</li>
+            <li>Nama pengguna tidak diungkapkan di papan peringkat publik.</li>
+            <li>Lihat data Anda: /my_data</li>
+            <li>Hapus semua data Anda: /delete_data</li>
+            <li>Akun tidak aktif (365 hari) dibersihkan secara otomatis.</li>
+            <li>Kebijakan privasi lengkap: <a href="https://howfar-bot.github.io/privacy/en/">Kebijakan Privasi</a></li>
+        </ul>
+    </div>
+</body>
+</html>

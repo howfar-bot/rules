@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Far? — Oyun Kuralları</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #f8f9fa; padding: 20px; }
+        .container { max-width: 680px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 32px 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+        h1 { font-size: 1.5em; margin-bottom: 4px; color: #111; }
+        .updated { font-size: 0.85em; color: #666; margin-bottom: 24px; }
+        h2 { font-size: 1.1em; margin-top: 24px; margin-bottom: 8px; color: #222; }
+        h3 { font-size: 1em; margin-top: 16px; margin-bottom: 6px; color: #333; }
+        p, li { font-size: 0.95em; color: #333; margin-bottom: 8px; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { margin-bottom: 4px; }
+        .highlight { background: #e8f5e9; border-left: 3px solid #4caf50; padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 0.9em; }
+        .highlight-blue { background: #e3f2fd; border-left: 3px solid #2196f3; padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 0.9em; }
+        .highlight-amber { background: #fff8e1; border-left: 3px solid #ff9800; padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 0.9em; }
+        table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9em; }
+        th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #e0e0e0; }
+        th { background: #f5f5f5; font-weight: 600; color: #222; }
+        .lang-switch { text-align: right; font-size: 0.85em; margin-bottom: 16px; }
+        .lang-switch a { color: #2196f3; text-decoration: none; }
+        .lang-switch a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch"><a href="../en/">English</a></div>
+        <h1>How Far? — Oyun Kuralları</h1>
+        <div class="updated">Son güncelleme: 5 Mart 2026</div>
+
+        <h2>1. How Far? Nedir?</h2>
+        <p>How Far?, dünya çapında <strong>yaşayan bağlantı ağınızı</strong> ölçer. Her bağlantı, iki kişinin şehirleri arasında gerçek kilometre cinsinden uzaklıktır. Ne kadar çok bağlantınız varsa ve şehirleriniz ne kadar uzakta olursa, erişiminiz o kadar büyük olur.</p>
+        <p>Liderlik tablosu, "kim en çok km biriktirdi" değil, <strong>kim şu anda en güçlü ağı koruyor</strong> onu gösterir.</p>
+
+        <h2>2. Başlarken</h2>
+        <p><strong>Yol 1 — Bir arkadaşın bağlantısı aracılığıyla.</strong> Bir arkadaş sana bağlantısını gönderir. @howfa_bot'u açarsın, konumunu paylaşırsın, bot şehrinizi tanımlar ve seni davet eden kişi ile bağlantı kurma seçeneği sunulur. Her ikiniz de km kazanırsınız.</p>
+        <p><strong>Yol 2 — Doğrudan.</strong> @howfa_bot'u kendin açarsın, konumunu paylaşırsın, bot şehrinizi tanımlar ve kişisel bağlantı bağlantınızı alırsınız. 0 bağlantıyla başlarsınız — bağlantınızı paylaşarak veya başkalarını kabul ederek ağınızı büyütün.</p>
+        <p>Şehriniz <strong>bir kez belirlenmiş ve 90 günde bir defadan fazla değiştirilemiyor</strong>.</p>
+
+        <h2>3. Bağlantılar</h2>
+        <h3>Bağlantı nedir?</h3>
+        <p>Bağlantı, iki kişi arasında onaylanmış bir bağlantıdır. Bir bağlantı yapıldığında, her ikisi de kilometre kazanırlar — şehirleri arasındaki mesafe.</p>
+
+        <h3>Nasıl bağlanılır</h3>
+        <p><strong>Yol 1: Yeni bir kişiyi davet edin.</strong> Bağlantınızı paylaşın. Bir arkadaş onu açar, kaydolur, bağlantıyı kabul eder. Her ikiniz de km kazanırsınız.</p>
+        <p><strong>Yol 2: How Far?'da halihazırda olan biriyle bağlanın.</strong> Bağlantınızı mevcut bir kullanıcıyla paylaşın. Tıklar ve kabul eder. Her ikiniz de km kazanırsınız. <strong>Yeni insanlar getirmeye zorunda değilsiniz</strong> — mevcut topluluk içinde ağınızı büyütebilirsiniz.</p>
+
+        <h3>Bağlantı bedeli (puan)</h3>
+        <p>Her bağlantı her iki taraf için puanın maliyeti:</p>
+
+        <ul>
+            <li><strong>Başlatıcı</strong> (bağlantı paylaşan): 10 puan</li>
+            <li><strong>Kabul eden</strong> (tıklayan ve kabul eden): 5 puan</li>
+        </ul>
+        <p>Her iki tarafın yeterli puanı yoksa, bağlantı kurulamaz.</p>
+
+        <h3>Bağlantı kuralları</h3>
+
+        <ul>
+            <li>Kendinle bağlanamassın.</li>
+            <li>İki kişi arasında yalnızca bir bağlantı.</li>
+            <li>Aynı şehirdeki bağlantılar 10 km kazanır (minimum mesafe).</li>
+            <li>Bağlantılar kalıcıdır — km anında her iki tarafa da yatırılır.</li>
+            <li>Bireysel bağlantılar kırılamaz. Tüm verileri silmek için — /delete_data kullanın (TÜM bağlantıları, km'i ve başarıları kaldırır).</li>
+        </ul>
+
+        <h2>4. Bağlantı Seviyeleri (L1 / L2)</h2>
+        <h3>L1 — Doğrudan bağlantılar</h3>
+        <p>Doğrudan bağlandığınız kişiler. Her L1 bağlantısı sizi km = şehirleriniz arasındaki mesafe ile kazandırır.</p>
+
+        <h3>L2 — Bağlantıların bağlantıları</h3>
+        <p>L1 temassınız birisiyle yeni bir bağlantı yaptığında, L2 kilometre kazanırsınız = onların bağlantısının mesafesi. Bu "ağ etkisi": arkadaşlarınız ne kadar etkin olursa, erişiminiz o kadar artar.</p>
+        <p>L2 km'ler otomatik olarak yatırılır — sizin tarafınızdan harekete gerek yok.</p>
+
+        <h3>Sağlık L2'yi etkiler</h3>
+        <p>L2 km'leri L1 arkadaşlarınızın <strong>sağlığına</strong> bağlıdır. Bir arkadaş etkinse (% 100 sağlık) — L2 katkılarının % 100'ünü alırsınız. Bir arkadaş hareketsizse (% 50 sağlık) — % 50'sini alırsınız. Tamamen hareketsizse (% 0 sağlık) — L2 katkısı 0.</p>
+
+        <div class="highlight-blue">Ağınız gerçekten güçlü olduğunda arkadaşlarınız da etkindir.</div>
+
+        <h2>5. Puanlar</h2>
+        <h3>Günlük tahsisi</h3>
+
+        <ul>
+            <li><strong>İlk gün:</strong> 100 puan (yeni gelen bonusu)</li>
+            <li><strong>2. günden itibaren:</strong> 30 puan</li>
+        </ul>
+        <p>Kullanılmayan puanlar <strong>birikmez</strong> — bakiyeniz her gün 00:00 UTC'de günlük miktara sıfırlanır.</p>
+
+        <h3>Kanal aboneliği bonusu</h3>
+        <p>Topluluk kanalına abone olmak +10 puan/gün (30 yerine 40) verir. İlgi, abone oldukça aktiftir. Ülkeniz için bir kanal varsa kullanılabilir.</p>
+
+        <h3>Puan maliyetleri</h3>
+        <table>
+            <tr><th>Eylem</th><th>Maliyet</th></tr>
+            <tr><td>Bağlantı isteği gönder</td><td>10 puan</td></tr>
+            <tr><td>Bağlantıyı kabul et</td><td>5 puan</td></tr>
+        </table>
+
+        <h2>6. Yaşayan Ağ — Ana Mekanik</h2>
+        <h3>Nedir?</h3>
+        <p>How Far?, <strong>yaşayan bir ağ</strong>, statik sayılar değil ölçer. Aktif puanınız (active_km) ağınızı ne sıklıkta genişlettiğinize bağlıdır.</p>
+
+        <h3>Nasıl çalışır</h3>
+
+        <ul>
+            <li>Her kullanıcının bir <strong>Ağ Sağlığı (0-100%)</strong> göstergesi vardır.</li>
+            <li>Sağlık = son bağlantı anında % 100 (davet edip etmediğiniz veya davet edilip edilmediğiniz).</li>
+            <li>Yeni bağlantı yapmazsanız sağlık düşmeye başlar: <strong>Yeni bağlantı olmadan 3 günde -10%</strong>.</li>
+            <li>30 gün bağlantı olmayan: sağlık = % 0.</li>
+            <li><strong>Herhangi bir yeni bağlantı</strong> = anında % 100'e geri yükleme.</li>
+            <li><strong>Eylem = bağlantı yapma.</strong> Sadece botu açmak veya istatistikleri görmek sayılmaz.</li>
+        </ul>
+
+        <h3>Sağlık neyi etkiler</h3>
+
+        <ul>
+            <li><strong>Lider tablosundaki L1 km'niz:</strong> active_L1 = L1_km × (sizin sağlığınız / 100)</li>
+            <li><strong>Lider tablosundaki L2 km'niz:</strong> arkadaşlarınızın sağlığına bağlıdır</li>
+            <li><strong>Lider tablosu toplamı:</strong> active_km = active_L1 + active_L2</li>
+            <li><strong>Ömür boyu km</strong> (/stats'ta toplam sayaç) — ETKİLENMEZ. Bu sizin tarihiniz.</li>
+            <li><strong>Küresel sayaç</strong> — bireysel sağlıktan ETKİLENMEZ.</li>
+        </ul>
+
+        <h3>Yeni gelenlerin için ödememe dönem</h3>
+        <p>Kaydolduktan sonra ilk <strong>7 gün</strong> — sağlık düşmez. Botu keşfetmek, ilk arkadaşları davet etmek, mekanikleri öğrenmek zamanı.</p>
+
+        <h3>Geri dönüş</h3>
+        <div class="highlight">Sağlığınız % 0 olsa bile ve aylarca oturum açmamış olsanız da — bir tek yeni bağlantı sağlığı anında % 100'e geri yükler. Sizi geri görmekten daima mutluyuz. Yokluk için ceza yok.</div>
+
+        <h3>Felsefe</h3>
+        <p>Yaşayan Ağ, hareketsizlik için bir ceza değil. Gerçekliği yansıtır: gerçek bir ağ, koruduğunuz ve büyüttüğünüz bağlantıdır. Lider tablosu, dünya çapında en güçlü ağı <strong>şu anda</strong> kimin kurduğunu gösterir.</p>
+
+        <h2>7. Lider Tablosu</h2>
+        <p>Lider tablosu <strong>active_km</strong> (active_L1 + active_L2) göre sıralanır.</p>
+        <p>Herkese açık liderlik tabloları <strong>kullanıcı adlarını veya kişisel verileri açığa koymaz</strong>. En iyi şehirleri ve ülkeye göre etkin kullanıcı sayılarını gösterirler.</p>
+        <p>/stats'ta şehir, ülke ve dünya sıralamanızı görürsünüz.</p>
+        <p>Lider tablosu her 6 saatte bir güncellenirler.</p>
+
+        <h2>8. Başarılar</h2>
+        <p>Başarılar <strong>ömür boyu km</strong> ile sayılırlar — kazanılan başarılar sağlık düştüğünde alınmaz. <strong>L1 ve L2</strong> bağlantılarından şehirler ve ülkeler coğrafi başarılar için sayılırlar.</p>
+        <p>/stats'ta, yalnızca kategori başına <strong>en yüksek başarı</strong> gösterilir. /achievements'ta, tümü ilerleme ile görülebilir.</p>
+
+        <h3>Kilometre başarıları</h3>
+        <table>
+            <tr><th>Başarı</th><th>Sınır</th></tr>
+            <tr><td>&#x1F463; İlk Adımlar</td><td>1.000 km</td></tr>
+            <tr><td>&#x1F30D; Kaşif</td><td>1.000.000 km</td></tr>
+            <tr><td>&#x1F680; Küresel Erişim</td><td>1.000.000.000 km</td></tr>
+        </table>
+
+        <h3>Bağlantı başarıları</h3>
+        <table>
+            <tr><th>Başarı</th><th>Sınır</th></tr>
+            <tr><td>&#x1F91D; Bağlayıcı</td><td>10 bağlantı</td></tr>
+            <tr><td>&#x1F310; Ağcı</td><td>50 bağlantı</td></tr>
+            <tr><td>&#x2B50; Merkez</td><td>500 bağlantı</td></tr>
+        </table>
+
+        <h3>Ülke başarıları</h3>
+        <table>
+            <tr><th>Başarı</th><th>Sınır</th></tr>
+            <tr><td>&#x1F310; Dünya Erişimi</td><td>50 ülke</td></tr>
+            <tr><td>&#x1FA90; Gezegen</td><td>100 ülke</td></tr>
+            <tr><td>&#x1F3C6; Dünya Bağlayıcısı</td><td>188 ülke (tümü)</td></tr>
+        </table>
+
+        <h3>Şehir başarıları</h3>
+        <table>
+            <tr><th>Başarı</th><th>Sınır</th></tr>
+            <tr><td>&#x1F3D9;&#xFE0F; Şehir Kaşifi</td><td>1.000 şehir</td></tr>
+            <tr><td>&#x1F5FA;&#xFE0F; Şehir Ustası</td><td>10.000 şehir</td></tr>
+        </table>
+
+        <h3>Yaşayan Ağ başarıları</h3>
+        <table>
+            <tr><th>Başarı</th><th>Sınır</th></tr>
+            <tr><td>&#x1F6E1;&#xFE0F; Ağ Koruyucusu</td><td>% 100 sağlık ile 30 gün</td></tr>
+            <tr><td>&#x1F48E; Kırılmaz</td><td>% 100 sağlık ile 90 gün</td></tr>
+        </table>
+        <p>Sağlığı % 100 olarak koruyun. Her düşüş sayacı sıfırlar. Her 3 günde en az bir yeni bağlantı yapın.</p>
+
+        <h3>Özel rozetler (sınırlı)</h3>
+        <table>
+            <tr><th>Rozet</th><th>Koşul</th></tr>
+            <tr><td>&#x1F31F; Genesis</td><td>İlk 1.000 kullanıcı. Sonsuza dek.</td></tr>
+            <tr><td>&#x1F525; Öncü</td><td>İlk 1.000.000 kullanıcı. Sonsuza dek.</td></tr>
+        </table>
+
+        <h2>9. Adil Oyun</h2>
+        <p>How Far?, gerçek insanlar arasındaki gerçek bağlantılar hakkında bir oyundur. Mekanikler <strong>hile doğal olarak dezavantajlı</strong> olacak şekilde tasarlanmıştır:</p>
+
+        <ul>
+            <li>Sahte hesaplar yeni bağlantılar olmadan sağlık kaybeder: 2 haftada % 50'nin altında, bir ayda % 0. Onlarla bağlantılardan km orantılı olarak solmaya başlar.</li>
+            <li>Boosting kısa bir artış verir, ancak devam eden efor olmadan puan sıfıra döner.</li>
+            <li>Gerçek insanlarla gerçek bağlantılar yüksek active_km tutmanın tek yoludur.</li>
+        </ul>
+
+        <h3>İhlal olarak sayılan nedir</h3>
+
+        <ul>
+            <li>Otomatik araçlar (bot'lar, scriptler) kullanarak toplu hesap ve bağlantı oluşturma.</li>
+            <li>Haksız avantaj elde etmek için coğrafi konumu spoofing etme.</li>
+        </ul>
+
+        <h3>Otomatik önlemler</h3>
+        <p>Sistem kuşkulu etkinliği otomatik olarak izler. Anormallikler algılandığında, kullanıcı <strong>bir bildirim alır</strong> nedeni ve süresini açıklayan:</p>
+
+        <ul>
+            <li><strong>Seviye 1 (uyarı):</strong> 48 saat boyunca günlük puanların geçici azaltılması. Otomatik olarak temizlenir.</li>
+            <li><strong>Seviye 2 (kısıtlama):</strong> Lider tablosundan gizli + azaltılmış puanlar. İstatistikler ve bağlantılar korunur. Etkinlik normalleştiğinde otomatik olarak temizlenir.</li>
+            <li><strong>Seviye 3 (engelleme):</strong> Tam hesap engelleme. Yalnızca sistematik ihlaller için uygulanır.</li>
+        </ul>
+
+        <div class="highlight-amber">Tüm önlemler otomatiktir — manuel müdahale yok. Yükseltme ve indirme algoritmaları izler.</div>
+
+        <h2>10. Şehrinizi Değiştirme</h2>
+
+        <ul>
+            <li>Şehir <strong>her 90 günde bir kez</strong> değiştirilebilir.</li>
+            <li>Mevcut bağlantılar <strong>orijinal km'lerini tutar</strong> (bağlantı anında hesaplanan mesafe).</li>
+            <li>Değişiklikten sonra yeni bağlantılar yeni şehirden hesaplanırlar.</li>
+        </ul>
+
+        <h2>11. Küresel Sayaç</h2>
+        <p>Ana ekran <strong>küresel sayaç</strong> gösterir: tüm How Far? kullanıcılarının toplam kilometre, insanlar ve ülkeler. Bu tüm topluluğun kolektif ilerlemesidir. Küresel sayaç bireysel sağlıktan ETKİLENMEZ.</p>
+
+        <h2>12. Veriler ve Gizlilik</h2>
+
+        <ul>
+            <li>Bot sadece şehrinizi <strong></strong> depolar (tam GPS koordinatları değil).</li>
+            <li>Kullanıcı adları herkese açık liderlik tablolarında açığa koymaz.</li>
+            <li>Verilerinizi görün: /my_data</li>
+            <li>Tüm verilerinizi silin: /delete_data</li>
+            <li>Etkin olmayan hesaplar (365 gün) otomatik olarak temizlenirler.</li>
+            <li>Tam gizlilik politikası: <a href="https://howfar-bot.github.io/privacy/en/">Gizlilik Politikası</a></li>
+        </ul>
+    </div>
+</body>
+</html>

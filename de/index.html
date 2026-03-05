@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Far? — Spielregeln</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #f8f9fa; padding: 20px; }
+        .container { max-width: 680px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 32px 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+        h1 { font-size: 1.5em; margin-bottom: 4px; color: #111; }
+        .updated { font-size: 0.85em; color: #666; margin-bottom: 24px; }
+        h2 { font-size: 1.1em; margin-top: 24px; margin-bottom: 8px; color: #222; }
+        h3 { font-size: 1em; margin-top: 16px; margin-bottom: 6px; color: #333; }
+        p, li { font-size: 0.95em; color: #333; margin-bottom: 8px; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { margin-bottom: 4px; }
+        .highlight { background: #e8f5e9; border-left: 3px solid #4caf50; padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 0.9em; }
+        .highlight-blue { background: #e3f2fd; border-left: 3px solid #2196f3; padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 0.9em; }
+        .highlight-amber { background: #fff8e1; border-left: 3px solid #ff9800; padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 0.9em; }
+        table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9em; }
+        th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #e0e0e0; }
+        th { background: #f5f5f5; font-weight: 600; color: #222; }
+        .lang-switch { text-align: right; font-size: 0.85em; margin-bottom: 16px; }
+        .lang-switch a { color: #2196f3; text-decoration: none; }
+        .lang-switch a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch"><a href="../en/">English</a></div>
+        <h1>How Far? — Spielregeln</h1>
+        <div class="updated">Zuletzt aktualisiert: 5. März 2026</div>
+
+        <h2>1. Was ist How Far?</h2>
+        <p>How Far? misst dein <strong>lebendes Netzwerk von Verbindungen</strong> rund um die Welt. Jede Verbindung ist eine echte Entfernung in Kilometern zwischen den Städten zweier Personen. Je mehr Verbindungen du hast und je weiter deine Städte auseinanderliegen, desto größer deine Reichweite.</p>
+        <p>Die Rangliste zeigt nicht „wer einmal die meisten km angesammelt hat", sondern <strong>wer gerade das stärkste Netzwerk unterhält</strong>.</p>
+
+        <h2>2. Erste Schritte</h2>
+        <p><strong>Weg 1 — Über einen Link eines Freundes.</strong> Ein Freund sendet dir seinen Link. Du öffnest @howfa_bot, teilst deinen Standort, der Bot identifiziert deine Stadt, und dir wird angeboten, dich mit der Person zu verbinden, die dich eingeladen hat. Ihr verdient beide km.</p>
+        <p><strong>Weg 2 — Direkt.</strong> Du öffnest @howfa_bot selbst, teilst deinen Standort, der Bot identifiziert deine Stadt, und du erhältst deinen persönlichen Verbindungslink. Du hast 0 Verbindungen — erweitere dein Netzwerk, indem du deinen Link teilst oder andere annimmst.</p>
+        <p>Deine <strong>Stadt</strong> wird einmalig festgelegt und kann höchstens alle 90 Tage geändert werden.</p>
+
+        <h2>3. Verbindungen</h2>
+        <h3>Was ist eine Verbindung?</h3>
+        <p>Eine Verbindung ist eine bestätigte Verknüpfung zwischen zwei Personen. Wenn eine Verbindung zustande kommt, verdienen beide Kilometer — die Entfernung zwischen ihren Städten.</p>
+        <h3>Wie man sich verbindet</h3>
+        <p><strong>Möglichkeit 1: Lade eine neue Person ein.</strong> Teile deinen Link. Ein Freund öffnet ihn, registriert sich und akzeptiert die Verbindung. Ihr verdient beide km.</p>
+        <p><strong>Möglichkeit 2: Verbinde dich mit jemandem, der bereits bei How Far? ist.</strong> Teile deinen Link mit einem bestehenden Nutzer. Er klickt ihn an und akzeptiert. Ihr verdient beide km. <strong>Du musst keine neuen Personen bringen</strong> — du kannst dein Netzwerk innerhalb der bestehenden Community ausbauen.</p>
+        <h3>Verbindungskosten (Punkte)</h3>
+        <p>Jede Verbindung kostet Punkte für beide Seiten:</p>
+        <ul>
+            <li><strong>Initiator</strong> (der den Link geteilt hat): 10 Punkte</li>
+            <li><strong>Akzeptor</strong> (der geklickt und akzeptiert hat): 5 Punkte</li>
+        </ul>
+        <p>Wenn eine Seite nicht genug Punkte hat, kann die Verbindung nicht hergestellt werden.</p>
+        <h3>Verbindungsregeln</h3>
+        <ul>
+            <li>Du kannst dich nicht mit dir selbst verbinden.</li>
+            <li>Nur eine Verbindung zwischen zwei Personen.</li>
+            <li>Verbindungen in der gleichen Stadt bringen 10 km (Mindestentfernung).</li>
+            <li>Verbindungen sind dauerhaft — km werden beiden Seiten sofort gutgeschrieben.</li>
+            <li>Einzelne Verbindungen können nicht gelöscht werden. Um alle Daten zu löschen — nutze /delete_data (löscht ALLE Verbindungen, km, Erfolge).</li>
+        </ul>
+
+        <h2>4. Verbindungsebenen (L1 / L2)</h2>
+        <h3>L1 — Direkte Verbindungen</h3>
+        <p>Personen, mit denen du dich direkt verbunden hast. Jede L1-Verbindung bringt dir km = die Entfernung zwischen euren Städten.</p>
+        <h3>L2 — Verbindungen von Verbindungen</h3>
+        <p>Wenn dein L1-Kontakt sich mit jemandem neu verbindet, verdienst du L2-Kilometer = die Entfernung ihrer Verbindung. Das ist der „Netzwerk-Effekt": Je aktiver deine Freunde sind, desto mehr wächst deine Reichweite.</p>
+        <p>L2-km werden automatisch gutgeschrieben — keine Aktion nötig von dir.</p>
+        <h3>Gesundheit beeinflusst L2</h3>
+        <p>L2-km hängen von der <strong>Gesundheit</strong> deiner L1-Freunde ab. Wenn ein Freund aktiv ist (100% Gesundheit) — bekommst du 100% seines L2-Beitrags. Wenn ein Freund inaktiv ist (50% Gesundheit) — bekommst du 50%. Wenn völlig inaktiv (0% Gesundheit) — ist sein L2-Beitrag 0.</p>
+        <div class="highlight-blue">Dein Netzwerk ist wirklich stark, wenn auch deine Freunde aktiv sind.</div>
+
+        <h2>5. Punkte</h2>
+        <h3>Tägliche Zuteilung</h3>
+        <ul>
+            <li><strong>Erster Tag:</strong> 100 Punkte (Neuling-Bonus)</li>
+            <li><strong>Ab Tag 2:</strong> 30 Punkte</li>
+        </ul>
+        <p>Ungenutzte Punkte <strong>sammeln sich nicht an</strong> — dein Guthaben wird täglich um 00:00 UTC auf die tägliche Menge zurückgesetzt.</p>
+        <h3>Community-Kanal-Abonnement-Bonus</h3>
+        <p>Das Abonnieren des Community-Kanals gibt +10 Punkte/Tag (40 statt 30). Der Bonus ist aktiv, während du abonniert bist. Verfügbar, wenn ein Kanal für dein Land existiert.</p>
+        <h3>Punktkosten</h3>
+        <table>
+            <tr><th>Aktion</th><th>Kosten</th></tr>
+            <tr><td>Verbindungsanfrage senden</td><td>10 Punkte</td></tr>
+            <tr><td>Verbindung akzeptieren</td><td>5 Punkte</td></tr>
+        </table>
+
+        <h2>6. Lebendes Netzwerk — Die Schlüsselmechanik</h2>
+        <h3>Was ist das?</h3>
+        <p>How Far? misst ein <strong>lebendes Netzwerk</strong>, keine statischen Zahlen. Deine aktive Punktzahl (active km) hängt davon ab, wie regelmäßig du dein Netzwerk erweiterst.</p>
+        <h3>Wie es funktioniert</h3>
+        <ul>
+            <li>Jeder Nutzer hat einen <strong>Netzwerk-Gesundheits-Indikator (0-100%)</strong>.</li>
+            <li>Gesundheit = 100% im Moment deiner letzten Verbindung (ob du eingeladen hast oder eingeladen wurdest).</li>
+            <li>Wenn du keine neuen Verbindungen machst, sinkt die Gesundheit: <strong>-10% alle 3 Tage ohne neue Verbindung</strong>.</li>
+            <li>Nach 30 Tagen ohne Verbindungen: Gesundheit = 0%.</li>
+            <li><strong>Jede neue Verbindung</strong> = sofortige Wiederherstellung auf 100%.</li>
+            <li><strong>Aktion = eine Verbindung machen.</strong> Den Bot nur öffnen oder Stats anschauen zählt nicht.</li>
+        </ul>
+        <h3>Was Gesundheit beeinflusst</h3>
+        <ul>
+            <li><strong>Deine L1-km in der Rangliste:</strong> active_L1 = L1_km × (deine Gesundheit / 100)</li>
+            <li><strong>Deine L2-km in der Rangliste:</strong> hängt von der Gesundheit deiner Freunde ab</li>
+            <li><strong>Ranglisten-Gesamt:</strong> active_km = active_L1 + active_L2</li>
+            <li><strong>Lifetime-km</strong> (Gesamtzähler in /stats) — NICHT beeinflusst. Das ist deine Historie.</li>
+            <li><strong>Globaler Zähler</strong> — NICHT beeinflusst von individueller Gesundheit.</li>
+        </ul>
+        <h3>Übergangsfrist für Neulinge</h3>
+        <p>Die ersten <strong>7 Tage</strong> nach der Registrierung — die Gesundheit sinkt nicht. Zeit zum Erkunden des Bots, zum Einladen der ersten Freunde, zum Lernen der Mechaniken.</p>
+        <h3>Rückkehr</h3>
+        <div class="highlight">Auch wenn deine Gesundheit 0% ist und du monatelang nicht angemeldet warst — eine neue Verbindung stellt die Gesundheit sofort auf 100% wieder her. Wir freuen uns immer, dich zurückzusehen. Keine Strafen für Abwesenheit.</div>
+        <h3>Philosophie</h3>
+        <p>Das lebende Netzwerk ist keine Bestrafung für Inaktivität. Es spiegelt die Realität wider: Ein echtes Netzwerk ist eines, das du pflegst und ausbaust. Die Rangliste zeigt, wer gerade das stärkste Netzwerk der Welt aufbaut.</p>
+
+        <h2>7. Rangliste</h2>
+        <p>Die Rangliste wird nach <strong>active_km</strong> (active_L1 + active_L2) sortiert.</p>
+        <p>Öffentliche Ranglisten <strong>geben keine Benutzernamen oder persönliche Daten preis</strong>. Sie zeigen Top-Städte und aktive Nutzerzahlen pro Land.</p>
+        <p>In /stats siehst du deinen Rang in deiner <strong>Stadt</strong>, deinem <strong>Land</strong> und der <strong>Welt</strong>.</p>
+        <p>Die Rangliste wird alle 6 Stunden aktualisiert.</p>
+
+        <h2>8. Erfolge</h2>
+        <p>Erfolge werden nach <strong>Lifetime-km</strong> gezählt — verdiente Erfolge werden niemals entfernt, wenn die Gesundheit sinkt. Städte und Länder aus <strong>beiden L1- und L2</strong>-Verbindungen zählen für geographische Erfolge.</p>
+        <p>In /stats wird nur der <strong>höchste Erfolg</strong> pro Kategorie angezeigt. In /achievements sind alle sichtbar mit Fortschritt.</p>
+        <h3>Kilometer-Erfolge</h3>
+        <table>
+            <tr><th>Erfolg</th><th>Schwellwert</th></tr>
+            <tr><td>&#x1F463; Erste Schritte</td><td>1.000 km</td></tr>
+            <tr><td>&#x1F30D; Entdecker</td><td>1.000.000 km</td></tr>
+            <tr><td>&#x1F680; Globale Reichweite</td><td>1.000.000.000 km</td></tr>
+        </table>
+        <h3>Verbindungs-Erfolge</h3>
+        <table>
+            <tr><th>Erfolg</th><th>Schwellwert</th></tr>
+            <tr><td>&#x1F91D; Verbinder</td><td>10 Verbindungen</td></tr>
+            <tr><td>&#x1F310; Netzwerker</td><td>50 Verbindungen</td></tr>
+            <tr><td>&#x2B50; Hub</td><td>500 Verbindungen</td></tr>
+        </table>
+        <h3>Länder-Erfolge</h3>
+        <table>
+            <tr><th>Erfolg</th><th>Schwellwert</th></tr>
+            <tr><td>&#x1F310; Weltweite Reichweite</td><td>50 Länder</td></tr>
+            <tr><td>&#x1FA90; Planetarisch</td><td>100 Länder</td></tr>
+            <tr><td>&#x1F3C6; Welt-Verbinder</td><td>188 Länder (alle)</td></tr>
+        </table>
+        <h3>Stadt-Erfolge</h3>
+        <table>
+            <tr><th>Erfolg</th><th>Schwellwert</th></tr>
+            <tr><td>&#x1F3D9;&#xFE0F; Stadt-Entdecker</td><td>1.000 Städte</td></tr>
+            <tr><td>&#x1F5FA;&#xFE0F; Stadt-Meister</td><td>10.000 Städte</td></tr>
+        </table>
+        <h3>Erfolge des lebenden Netzwerks</h3>
+        <table>
+            <tr><th>Erfolg</th><th>Schwellwert</th></tr>
+            <tr><td>&#x1F6E1;&#xFE0F; Netzwerk-Wächter</td><td>30 Tage bei 100% Gesundheit</td></tr>
+            <tr><td>&#x1F48E; Unzerbrechlich</td><td>90 Tage bei 100% Gesundheit</td></tr>
+        </table>
+        <p>Halte die Gesundheit ununterbrochen bei 100%. Jeder Rückgang setzt den Zähler zurück. Mache mindestens alle 3 Tage eine neue Verbindung.</p>
+        <h3>Spezielle Abzeichen (begrenzt)</h3>
+        <table>
+            <tr><th>Abzeichen</th><th>Bedingung</th></tr>
+            <tr><td>&#x1F31F; Genesis</td><td>Erste 1.000 Nutzer. Für immer.</td></tr>
+            <tr><td>&#x1F525; Pionier</td><td>Erste 1.000.000 Nutzer. Für immer.</td></tr>
+        </table>
+
+        <h2>9. Faires Spielen</h2>
+        <p>How Far? ist ein Spiel über echte Verbindungen zwischen echten Personen. Die Mechaniken sind so gestaltet, dass <strong>Betrug inhärent nachteilig ist</strong>:</p>
+        <ul>
+            <li>Fake-Accounts verlieren ohne neue Verbindungen an Gesundheit: in 2 Wochen unter 50%, in einem Monat 0%. Km aus Verbindungen mit ihnen verblassen anteilig.</li>
+            <li>Boosting gibt einen kurzen Anstieg, aber ohne nachhaltigen Aufwand kehrt die Punktzahl auf Null zurück.</li>
+            <li>Echte Verbindungen mit echten Personen sind der einzige Weg, um hohe active km zu halten.</li>
+        </ul>
+        <h3>Was als Verstoß zählt</h3>
+        <ul>
+            <li>Verwendung automatisierter Tools (Bots, Skripte) zur Massenerstellung von Accounts und Verbindungen.</li>
+            <li>Fälschung von Geolokalisierung für unfairen Vorteil.</li>
+        </ul>
+        <h3>Automatische Maßnahmen</h3>
+        <p>Das System überwacht automatisch verdächtige Aktivitäten. Wenn Anomalien erkannt werden, erhält der Nutzer <strong>eine Benachrichtigung</strong> mit Grund und Dauer:</p>
+        <ul>
+            <li><strong>Stufe 1 (Warnung):</strong> Vorübergehende Reduktion der täglichen Punkte für 48 Stunden. Wird automatisch gelöscht.</li>
+            <li><strong>Stufe 2 (Einschränkung):</strong> Versteckt von der Rangliste + reduzierte Punkte. Stats und Verbindungen bleiben erhalten. Wird automatisch gelöscht, wenn sich die Aktivität normalisiert.</li>
+            <li><strong>Stufe 3 (Sperre):</strong> Vollständige Kontosperrung. Wird nur bei systematischen Verstößen angewendet.</li>
+        </ul>
+        <div class="highlight-amber">Alle Maßnahmen sind automatisch — kein manueller Eingriff. Eskalation und Deeskalation folgen dem Algorithmus.</div>
+
+        <h2>10. Stadt ändern</h2>
+        <ul>
+            <li>Stadt kann <strong>alle 90 Tage einmal</strong> geändert werden.</li>
+            <li>Bestehende Verbindungen <strong>behalten ihre ursprünglichen km</strong> (Entfernung wird zum Zeitpunkt der Verbindung berechnet).</li>
+            <li>Neue Verbindungen nach der Änderung werden von der neuen Stadt aus berechnet.</li>
+        </ul>
+
+        <h2>11. Globaler Zähler</h2>
+        <p>Der Hauptbildschirm zeigt einen <strong>globalen Zähler</strong>: Gesamtkilometer, Personen und Länder aller How Far?-Nutzer. Das ist der kollektive Fortschritt der gesamten Community. Der globale Zähler wird NICHT durch individuelle Gesundheit beeinflusst.</p>
+
+        <h2>12. Daten und Datenschutz</h2>
+        <ul>
+            <li>Der Bot speichert nur deine <strong>Stadt</strong> (keine genauen GPS-Koordinaten).</li>
+            <li>Benutzernamen werden nicht in öffentlichen Ranglisten preisgegeben.</li>
+            <li>Sehe deine Daten: /my_data</li>
+            <li>Lösche alle deine Daten: /delete_data</li>
+            <li>Inaktive Accounts (365 Tage) werden automatisch gelöscht.</li>
+            <li>Vollständige Datenschutzrichtlinie: <a href="https://howfar-bot.github.io/privacy/de/">Datenschutzrichtlinie</a></li>
+        </ul>
+    </div>
+</body>
+</html>
